@@ -5,6 +5,30 @@ $(document).ready(function(){
         $("#change").html("go away");
     });
 
+    function resume(x){
+        $(".resume-section").hide();
+        $(".resume-link-active").removeClass("resume-link-active weight-heavy");
+        switch (x){
+            case 1:
+                $("#education").show();
+                $("#a-education").addClass("resume-link-active weight-heavy");
+                break;
+            case 2:
+                $("#work").show();
+                $("#a-work").addClass("resume-link-active weight-heavy");
+                break;
+            case 3:
+                $("#volunteer").show();
+                $("#a-volunteer").addClass("resume-link-active weight-heavy");
+        }
+    }
+
+    $("#a-education").click(function(){ resume(1); return false; });
+    $("#a-work").click(function(){ resume(2); return false; });
+    $("#a-volunteer").click(function(){ resume(3); return false; });
+
+    $(".resume-type").hide();
+
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
 
@@ -44,4 +68,6 @@ $(document).ready(function(){
           });
         } // End if
       });
+
+      $("#education").show();
 });

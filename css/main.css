@@ -1,15 +1,3 @@
-.color-primary-0 { color: #446244 }	/* Main Primary color */
-.color-primary-1 { color: #86A486 }
-.color-primary-2 { color: #618261 } /* green */
-.color-primary-3 { color: #264226 }
-.color-primary-4 { color: #163C16 }
-
-.color-secondary-1-0 { color: #35474C }	/* Main Secondary color (1) */
-.color-secondary-1-1 { color: #687B7F } /* blue */
-.color-secondary-1-2 { color: #4C6065 }
-.color-secondary-1-3 { color: #1E2F33 }
-.color-secondary-1-4 { color: #12292F }
-
 .color-secondary-2-0 { color: #7A6755 }	/* Main Secondary color (2) */
 .color-secondary-2-1 { color: #CDBAA7 } /* beige */
 .color-secondary-2-2 { color: #A38E79 } /* beige 2 */
@@ -31,8 +19,7 @@ body{
 }
 
 .section{
-    margin: 0 20% 20% 20%;
-    width: 60%;
+    padding: 1% 20% 15% 20%;
 }
 
 .section-header{
@@ -76,7 +63,7 @@ a:hover.tb-link{
 }
 
 #about{
-    padding-top:5%;
+    padding: 5% 20% 20% 20%;
     font-size: 20pt;
     /*color: #86A486;*/
 }
@@ -85,8 +72,40 @@ a:hover.tb-link{
     margin-bottom: 5%;
 }
 
+#resume{
+    background-color:#FBFBFB;
+}
+
+#resume-header{
+    margin-bottom: 0;
+}
+
+#resume-links{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3%;
+    color: #00000085;
+
+}
+#resume-links a{
+    font-size: 12pt;
+    padding: 0 2% 1% 2%;
+}
+
+#resume-links a:hover{
+    border-bottom: 2px solid #A37979;
+}
+
+.resume-link-active{
+    color: #A37979;
+    border-bottom: 2px solid #A37979;
+}
+
 .resume-section{
     font-size: 12pt;
+    display: none;
+    height: 500px;
+    overflow-y: auto
 }
 
 .logo-school{
@@ -97,20 +116,20 @@ a:hover.tb-link{
 }
 
 .resume-entry{
-    margin-bottom: 10%;
-    border-radius: 10px;
-    background: #FBFBFB;
+    margin-bottom: 2%;
     padding: 2%;
 }
 
-.resume-type{
-    font-size: 18pt;
-    margin-bottom: 5%;
+.resume-entry div div p{
+    margin: 0.5% 0;
 }
 
 .list-exp{
-    margin-top: 5%;
-    opacity: 50%;
+    margin-top: 2%;
+}
+
+.list-exp p{
+    margin-bottom: 1%;
 }
 
 .projects{
@@ -174,7 +193,7 @@ ul.tools li {
 }
 
 #contact{
-    /*color: blue;*/
+    background-color:#FBFBFB;
     font-size: 14pt;
     margin-bottom: 5%;
 }
@@ -188,7 +207,6 @@ ul.tools li {
 #scroll-top-btn{
     background-color: #FBFBFB;
     font-size: 22pt;
-    /*color: #86A486;*/
     border-radius: 100%;
     width: 60px;
     height: 60px;
