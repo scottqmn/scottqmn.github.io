@@ -13,33 +13,8 @@
         <link href="css/main.css" rel="stylesheet">
     </head>
     <body>
-        <!--
-        <div class=" ">
-            <nav class="navbar">
-                <a class="navbar-brand" href="#">Hi, I'm Scott</a>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#work">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Future</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="shadow-top"></div>
-        </div>
-        -->
 
-        
+        <!--
         <div id="toolbar" class="">
             <div>
                 <img id="logo" src="images/logo-round.jpg">
@@ -50,13 +25,33 @@
                 <a class="tb-link" href="#contact">Contact</a>
             </div>
         </div>
+        -->
+
+        <div id="toolbar2" class="container">
+            <div class="row text-center">
+                <div class="col-md-4 text-center">
+                    <div>
+                        <img id="logo" src="images/logo-round.jpg">
+                    </div>
+                </div>
+                <div class="col-md-8 text-center">
+                    <div id="nav-links">
+                        <a href="#resume">Resume</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div id="about" class="section">
-            <h1 id="greeting">Hi, I'm Scott.</h1>
-            <p>
-                I'm an aspiring software and web developer in Orange County, CA. I probably had too much coffee today.
-            </p>
+            <p id="greeting">Hi, I'm Scott.</p>
+            <p>I'm a software and web developer living in Orange County, CA.</p>
+            <p id="blurb">I probably had too much coffee today.</p>
         </div>
+
+
+        <!-- RESUME -->
 
         <div id="resume" class="section">
             <h2 class="text-center section-header" id="resume-header">Resume</h2>
@@ -72,12 +67,12 @@
                     <img src="images/UCSD.png" class="grow logo-school">
                 -->
                 <div class="container resume-entry">
-                    <div class="row">
-                        <div class="col-8">
+                    <div class="row text-center">
+                        <div class="col-sm-7">
                             <p class="weight-heavy">University of California, San Diego</p>
                             <p class="">Mathematics-Computer Science, B.S</p>
                         </div>
-                        <div class="col-4 font-italic text-right">
+                        <div class="col-sm-5 font-italic">
                             <p>Fall 2015 - Fall 2017</p>
                             <p>La Jolla, CA</p>
                         </div>
@@ -97,7 +92,6 @@
                 </div>
 
             <!-- OCC
-                <img src="images/OCC.png" class="logo-school">
                 <div class="container school">
                     <div class="row">
                         <div class="col-9 weight-heavy">
@@ -111,16 +105,17 @@
                     </div>
                 </div>
             -->
+
             </div>
         
             <div id="work" class="resume-section">
                 <div class="container resume-entry">
-                    <div class="row">
-                        <div class="col-8">
-                            <p class="weight-heavy">Mathnasium Math Learning Center</p>
+                    <div class="row text-center">
+                        <div class="col-sm-7">
+                            <p class="weight-heavy">Mathnasium Learning Center</p>
                             <p>Instructor</p>
                         </div>
-                        <div class="col-4 font-italic text-right">
+                        <div class="col-sm-5 font-italic">
                             <p>Apr 2018 - Present</p>
                             <p>Fullerton, CA</p>
                         </div>
@@ -136,12 +131,12 @@
                 </div>
                 <hr>
                 <div class="container resume-entry">
-                    <div class="row">
-                        <div class="col-8">
+                    <div class="row text-center">
+                        <div class="col-sm-7">
                             <p class="weight-heavy">Amazon Mechanical Turk</p>
                             <p>Online Contractor</p>
                         </div>
-                        <div class="col-4 font-italic text-right">
+                        <div class="col-sm-5 font-italic">
                             <p>Apr 2017 - Present</p>
                         </div>
                     </div>
@@ -157,12 +152,12 @@
 
             <div id="volunteer" class="resume-section">
                 <div class="container resume-entry">
-                    <div class="row">
-                        <div class="col-8">
+                    <div class="row text-center">
+                        <div class="col-sm-8">
                             <p class="weight-heavy">Alpha Phi Omega Service Organization</p>
                             <p>Active Chapter Member</p>
                         </div>
-                        <div class="col-4 font-italic text-right">
+                        <div class="col-sm-4 font-italic">
                             <p>Sep 2015 - Dec 2017</p>
                             <p>La Jolla, CA</p>
                         </div>
@@ -182,22 +177,6 @@
 
         <div id="projects" class="section">
             <h2 class="text-center section-header">Projects</h2>
-            <!--
-            <div class="container">
-                <div class="row">
-                    <div class="col-s-2 col-m-2 col-lg-2 col-xl-2">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="col-s-10 col-m-10 col-lg-10 col-xl-10">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            -->
             
             <div class="row">
                 <div class="col-md-6">
@@ -267,15 +246,13 @@
             </div>
         </div>
 
+        <!-- CONTACT -->
+
         <div id="contact" class="section">
             <h2 class="text-center section-header">Contact</h2>
-            <div class="row">
-                <div class="col-4">
-                    <p>© 2018 Scott Nguyen</p>
-                </div>
-                <div class="col-8 text-right">
-                    <p> //<a href="mailto:scottqmn@gmail.com">Email</a> // <a href="https://codepen.io/scottqmn/">CodePen</a> // <a href="https://github.com/scottqmn">GitHub</a> // <a href="https://www.linkedin.com/in/scottqmn/">LinkedIn</a></p>
-                </div>
+            <div class="text-center">
+                <p> <a href="mailto:scottqmn@gmail.com">Email</a> // <a href="https://codepen.io/scottqmn/">CodePen</a> // <a href="https://github.com/scottqmn">GitHub</a> // <a href="https://www.linkedin.com/in/scottqmn/">LinkedIn</a></p>
+                <p>Designed and developed by Scott Nguyen © 2018</p>
             </div>
         </div>
 

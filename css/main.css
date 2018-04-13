@@ -19,7 +19,7 @@ body{
 }
 
 .section{
-    padding: 1% 20% 15% 20%;
+    padding: 1% 15% 15% 15%;
 }
 
 .section-header{
@@ -30,47 +30,62 @@ body{
     font-weight: 700;
 }
 
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+
 #logo{
     height: 150px;
     width: 150px;
+    margin: 4% 0 2% 0;
 }
+
 #toolbar{
     display: inline-flex;
     margin: 5% 20% 0 20%;
-    width: 60%;
-    /*background-color: purple;*/
+    width: 100%;
 }
 
 #nav-links{
     position: relative;
-    margin-left: auto;
-    right: 0;
-    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /*
+    margin: 0;
+    width: 100%;
+    */
 }
 
-.tb-link{
+#nav-links a{
     padding: 0 4% 2% 4%;
-    font-size: 20pt;
+    font-size: 3vh;
     color:#00000085;
 }
 
-a:hover.tb-link{
-    /*border-bottom: 3px solid #86A486;*/
+#nav-links a:hover{
     border-bottom: 3px solid #A37979;
     text-decoration: none;
     color:#00000085;
-
 }
+
+/* INTRO */
 
 #about{
     padding: 5% 20% 20% 20%;
-    font-size: 20pt;
+    /*font-size: 20pt;*/
+    font-size: 4.5vh;
     /*color: #86A486;*/
 }
 
 #greeting{
+    font-size: 5.75vh;
     margin-bottom: 5%;
 }
+
+/* RESUME */
 
 #resume{
     background-color:#FBFBFB;
@@ -105,15 +120,9 @@ a:hover.tb-link{
     font-size: 12pt;
     display: none;
     height: 500px;
-    overflow-y: auto
+    overflow-y: auto;
 }
 
-.logo-school{
-    position: absolute;
-    left: 15%;
-    width: 60px;
-    height: 60px;
-}
 
 .resume-entry{
     margin-bottom: 2%;
@@ -125,12 +134,15 @@ a:hover.tb-link{
 }
 
 .list-exp{
+    width: 75%;
     margin-top: 2%;
 }
 
 .list-exp p{
     margin-bottom: 1%;
 }
+
+/* PROJECTS */
 
 .projects{
 }
@@ -146,7 +158,7 @@ a:hover.tb-link{
 }
 
 .card-body{
-    height: 250px;
+    height: 260px;
 }
 
 .card-title{
@@ -160,6 +172,7 @@ a:hover.tb-link{
 }
 
 .card-bottom{
+    display: none;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -188,18 +201,17 @@ ul.tools li {
     border-radius: 5px;
 }
 
-.list-exp{
-    width: 75%;
-}
+/* CONTACT */
 
 #contact{
     background-color:#FBFBFB;
-    font-size: 14pt;
-    margin-bottom: 5%;
+    font-size: 2vh;
+    margin-bottom: 0%;
+    padding-bottom: 10%;
 }
 
 .section-header{
-    font-size: 30pt;
+    font-size: 5vh;
     margin-top: 5%;
     padding: 5% 0 3% 0;
 }
@@ -243,8 +255,4 @@ ul.tools li {
 	-ms-transition: all .2s ease-in-out;
 }
 
-.shadow-top{
-    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
-    height:15px;
-    background-color:rgb(255, 255, 255, 0);
 }
