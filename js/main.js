@@ -1,9 +1,27 @@
 $(document).ready(function(){
     console.log("ready");
-    $("#knock").click(function(){
-        console.log("hello");
-        $("#change").html("go away");
-    });
+
+
+    // INTRO
+    var blurbs = [  "I probably had too much coffee today.",
+                    "I hope my dog is proud of me.",
+                    "I could use a another nap right now.",
+                    "I should probably clean up my browser tabs.",
+                    "The logo is supposed to be my initials.",
+                    "I picked #A37979 because of a shirt I bought in 2010.",
+                    "I'm constantly craving hot wings and elotes.",
+                    "Most of my online searches are on how to center HTML elements."];
+
+    function blurb(){
+        var random = Math.floor(Math.random() * blurbs.length);
+        console.log(random);
+        $("#blurb").html(blurbs[random]);
+    }
+
+    blurb();
+    $("#blurb").click(function(){blurb();});
+
+    // RESUME
 
     function resume(x){
         $(".resume-section").hide();
@@ -20,14 +38,23 @@ $(document).ready(function(){
             case 3:
                 $("#volunteer").show();
                 $("#a-volunteer").addClass("resume-link-active weight-heavy");
+                break;
+            case 4:
+                $("#skills").show();
+                $("#a-skills").addClass("resume-link-active weight-heavy");
+            
         }
     }
+
+    $(".resume-type").hide();
+    $("#education").show();
 
     $("#a-education").click(function(){ resume(1); return false; });
     $("#a-work").click(function(){ resume(2); return false; });
     $("#a-volunteer").click(function(){ resume(3); return false; });
+    $("#a-skills").click(function(){ resume(4); return false; });
 
-    $(".resume-type").hide();
+    // SCROLL TO TOP BUTTON
 
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
@@ -46,6 +73,8 @@ $(document).ready(function(){
         }, 500); 
     });
 
+
+    //SMOOTH SCROLLING
 
     $("a").on('click', function(event) {
 
@@ -68,6 +97,4 @@ $(document).ready(function(){
           });
         } // End if
       });
-
-      $("#education").show();
 });
