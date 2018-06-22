@@ -7,7 +7,6 @@ $(document).ready(function(){
                     "I hope my dog is proud of me.",
                     "I could use a another nap right now.",
                     "I should probably clean up my browser tabs.",
-                    "The logo is supposed to be my initials.",
                     "I picked #A37979 because of a shirt I bought in 2010.",
                     "I'm constantly craving hot wings and elotes.",
                     "Most of my online searches are on how to center HTML elements."];
@@ -15,7 +14,10 @@ $(document).ready(function(){
     function blurb(){
         var random = Math.floor(Math.random() * blurbs.length);
         console.log(random);
-        $("#blurb").html(blurbs[random]);
+        $("#blurb").fadeOut("fast", function(){
+            $("#blurb").html(blurbs[random]);
+            $("#blurb").fadeIn("fast");
+        });
     }
 
     blurb();
@@ -23,7 +25,8 @@ $(document).ready(function(){
 
     // RESUME
 
-    function resume(x){
+    function resumeSec(x){
+        
         $(".resume-section").hide();
         $(".resume-link-active").removeClass("resume-link-active weight-heavy");
         switch (x){
@@ -49,18 +52,22 @@ $(document).ready(function(){
     $(".resume-type").hide();
     $("#education").show();
 
-    $("#a-education").click(function(){ resume(1); return false; });
-    $("#a-work").click(function(){ resume(2); return false; });
-    $("#a-volunteer").click(function(){ resume(3); return false; });
-    $("#a-skills").click(function(){ resume(4); return false; });
+    $("#a-education").click(function(){ resumeSec(1); });
+    $("#a-work").click(function(){ resumeSec(2); });
+    $("#a-volunteer").click(function(){ resumeSec(3); });
+    $("#a-skills").click(function(){ resumeSec(4); });
 
     // SCROLL TO TOP BUTTON
 
     // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function() {
+        showScrollBtn();
+    };
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30)
+    var w = window.matchMedia("(min-width: 600px)")
+
+    function showScrollBtn() {
+        if ((document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) && w.matches)
             $("#scroll-top-btn").fadeIn("fast");
         else
             $("#scroll-top-btn").fadeOut("fast");
