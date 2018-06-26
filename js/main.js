@@ -1,61 +1,62 @@
 $(document).ready(function(){
     console.log("ready");
 
-
-    // INTRO
-    var blurbs = [  "I probably had too much coffee today.",
+    var intro = {
+        blurbs: [   "I probably had too much coffee today.",
                     "I hope my dog is proud of me.",
                     "I could use a another nap right now.",
                     "I should probably clean up my browser tabs.",
-                    "I picked #A37979 because of a shirt I bought in 2010.",
-                    "I'm constantly craving hot wings and elotes.",
-                    "Most of my online searches are on how to center HTML elements."];
+                    "The color #A37979 is from a shirt I bought in 2010.",
+                    "I wish the elote man would visit my neighborhood.",
+                    "I've updated my privacy policy (not really)."],
+        
+        currentBlurb: "",
 
-    function blurb(){
-        var random = Math.floor(Math.random() * blurbs.length);
-        console.log(random);
-        $("#blurb").fadeOut("fast", function(){
-            $("#blurb").html(blurbs[random]);
-            $("#blurb").fadeIn("fast");
-        });
-    }
+        init: function() {
+            this.cacheDOM();
+            this.bindEvents();
+            this.newBlurb();
+            this.render();
+        },
+        
+        cacheDOM: function() {
+            this.$blurb = $('#blurb');
+        },
+        
+        bindEvents: function(){
+            this.$blurb.on('click', this.newBlurb.bind(this));
+        },
 
-    blurb();
-    $("#blurb").click(function(){blurb();});
+        render: function() {
+            this.$blurb.html(this.currentBlurb);
+        },
+
+        newBlurb: function(){
+            this.currentBlurb = this.blurbs[Math.floor(Math.random() * this.blurbs.length)];
+            this.render();
+        }
+
+    };
+
+    intro.init();
 
     // RESUME
 
-    function resumeSec(x){
-        
+    function showSec(sec){
         $(".resume-section").hide();
         $(".resume-link-active").removeClass("resume-link-active weight-heavy");
-        switch (x){
-            case 1:
-                $("#education").show();
-                $("#a-education").addClass("resume-link-active weight-heavy");
-                break;
-            case 2:
-                $("#work").show();
-                $("#a-work").addClass("resume-link-active weight-heavy");
-                break;
-            case 3:
-                $("#volunteer").show();
-                $("#a-volunteer").addClass("resume-link-active weight-heavy");
-                break;
-            case 4:
-                $("#skills").show();
-                $("#a-skills").addClass("resume-link-active weight-heavy");
-            
-        }
+        
+        $("#" + sec).show();
+        $("#a-" + sec).addClass("resume-link-active weight-heavy");
     }
 
-    $(".resume-type").hide();
-    $("#education").show();
+    $("#a-education").click(function(){ showSec("education"); });
+    $("#a-work").click(function(){ showSec("work"); });
+    $("#a-volunteer").click(function(){ showSec("volunteer"); });
+    //$("#a-skills").click(function(){ showSec("skills"); });
 
-    $("#a-education").click(function(){ resumeSec(1); });
-    $("#a-work").click(function(){ resumeSec(2); });
-    $("#a-volunteer").click(function(){ resumeSec(3); });
-    $("#a-skills").click(function(){ resumeSec(4); });
+    showSec("education");
+
 
     // SCROLL TO TOP BUTTON
 
