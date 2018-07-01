@@ -57,6 +57,19 @@ $(document).ready(function(){
 
     showSec("education");
 
+    // TEMPLATE STUFF
+    var data, template, html;
+
+    data = {
+        name: "UCSD",
+        role: "student",
+        start: "Fall 2015",
+        end: "Fall 2017",
+        location: "La Jolla, CA",
+        listName: "Relevant Coursework",
+        bullet: ["Advanced Data Structures", "Design and Analysis of Algorithms", "Digital Systems Design"]
+    };
+
 
     // SCROLL TO TOP BUTTON
 

@@ -1,0 +1,22 @@
+<script id="template1" type="text/html">
+    <div class="container resume-entry">
+        <div class="row">
+            <div class="col-sm-8">
+                <p class="weight-heavy">{{name}}</p>
+                <p>{{role}}</p>
+            </div>
+            <div class="col-sm-4 font-italic">
+                <p>{{start}} - {{end}}</p>
+                <p>{{location}}</p>
+            </div>
+        </div>
+        <div class="list-exp">
+            <p class="weight-heavy">{{listName}}</p>
+            <ul>
+                {{#bullet}}
+                <li> {{.}} </li>
+                {{/bullet}}
+            </ul>
+        </div>
+    </div>
+</script>
