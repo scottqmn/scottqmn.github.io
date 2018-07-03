@@ -42,6 +42,76 @@ $(document).ready(function(){
 
     // RESUME
 
+    var resume = {
+        ucsdData: {
+            type: "resume-entry--education",
+            name: "University of California, San Diego",
+            role: "B.S. Mathematics-Computer Science",
+            start: "Fall 2015",
+            end: "Fall 2017",
+            location: "La Jolla, CA",
+            listName: "Relevant Coursework",
+            bullet: ["Advanced Data Structures", "Design and Analysis of Algorithms", "Digital Systems Design", "Automata and Computability Theory", "Numerical Analysis", "Combinatorics", "Statistical Methods"]
+        },
+
+        entries: [
+                {
+                    type: "resume-entry--education",
+                    name: "1University of California, San Diego",
+                    role: "B.S. Mathematics-Computer Science",
+                    start: "Fall 2015",
+                    end: "Fall 2017",
+                    location: "La Jolla, CA",
+                    listName: "Relevant Coursework",
+                    bullet: ["Advanced Data Structures", "Design and Analysis of Algorithms", "Digital Systems Design", "Automata and Computability Theory", "Numerical Analysis", "Combinatorics", "Statistical Methods"]
+                },
+                {
+                    type: "resume-entry--education",
+                    name: "2University of California, San Diego",
+                    role: "B.S. Mathematics-Computer Science",
+                    start: "Fall 2015",
+                    end: "Fall 2017",
+                    location: "La Jolla, CA",
+                    listName: "Relevant Coursework",
+                    bullet: ["Advanced Data Structures", "Design and Analysis of Algorithms", "Digital Systems Design", "Automata and Computability Theory", "Numerical Analysis", "Combinatorics", "Statistical Methods"]
+                },
+                {
+                    type: "resume-entry--education",
+                    name: "3University of California, San Diego",
+                    role: "B.S. Mathematics-Computer Science",
+                    start: "Fall 2015",
+                    end: "Fall 2017",
+                    location: "La Jolla, CA",
+                    listName: "Relevant Coursework",
+                    bullet: ["Advanced Data Structures", "Design and Analysis of Algorithms", "Digital Systems Design", "Automata and Computability Theory", "Numerical Analysis", "Combinatorics", "Statistical Methods"]
+                }
+        ],
+        init: function() {
+            this.cacheDOM();
+            this.bindEvents();
+            this.render();
+        },
+        cacheDOM: function() {
+            this.$el = $('#resume');
+            this.$education = this.$el.find('#a-education');
+            this.$work = this.$el.find('#a-work');
+            this.$volunteer = this.$el.find('#a-volunteer');
+            this.$section = this.$el.find('#test-section');
+            this.template = this.$el.find('#resume-template').html();
+        },
+        bindEvents: function() {
+
+        },
+        render: function() {
+            var data = {
+                entries: this.entries
+            };
+            this.$section.html(Mustache.render(this.template, this.entries));
+        }
+    };
+
+    resume.init();
+
     function showSec(sec){
         $(".resume-section").hide();
         $(".resume-link-active").removeClass("resume-link-active weight-heavy");
@@ -56,20 +126,6 @@ $(document).ready(function(){
     //$("#a-skills").click(function(){ showSec("skills"); });
 
     showSec("education");
-
-    // TEMPLATE STUFF
-    var data, template, html;
-
-    data = {
-        name: "UCSD",
-        role: "student",
-        start: "Fall 2015",
-        end: "Fall 2017",
-        location: "La Jolla, CA",
-        listName: "Relevant Coursework",
-        bullet: ["Advanced Data Structures", "Design and Analysis of Algorithms", "Digital Systems Design"]
-    };
-
 
     // SCROLL TO TOP BUTTON
 
@@ -101,21 +157,21 @@ $(document).ready(function(){
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-    
-          // Store hash
-          var hash = this.hash;
-    
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
             scrollTop: $(hash).offset().top
-          }, 800, function(){
-       
+            }, 800, function(){
+        
             // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
-          });
+            });
         } // End if
-      });
+    });
 });
