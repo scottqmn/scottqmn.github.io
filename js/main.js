@@ -2,13 +2,17 @@ $(document).ready(function(){
     console.log("ready");
 
     var intro = {
-        blurbs: [   "I probably had too much coffee today.",
+        blurbs: [   "How much coffee is too much coffee?",
                     "I hope my dog is proud of me.",
                     "I could use a another nap right now.",
                     "I should probably clean up my browser tabs.",
-                    "The color #A37979 is from a shirt I bought in 2010.",
-                    "I wish the elote man would visit my neighborhood.",
-                    "I've updated my privacy policy (not really)."],
+                    "The color #A37979 is based on a shirt I bought 8 years ago.",
+                    "Having a local elote man counts as a benefit.",
+                    "I've updated my privacy policy (not really).",
+                    "Let me show you how good I am at Guitar Hero.",
+                    "Remember to stay hydrated.",
+                    "Would binging Silicon Valley count as work experience?"
+                ],
         
         currentBlurb: "",
 
