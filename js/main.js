@@ -11,7 +11,10 @@ $(document).ready(function(){
                     "I've updated my privacy policy (not really).",
                     "Let me show you how good I am at Guitar Hero.",
                     "Remember to stay hydrated.",
-                    "Would binging Silicon Valley count as work experience?"
+                    "Would binging Silicon Valley count as work experience?",
+                    "Does an obsession with overly spicy foods count as a hobby?",
+                    "If my voice is gone, it's probably because of a card game.",
+                    "Feel free to ask me for music recommendations."
                 ],
         
         currentBlurb: "",
