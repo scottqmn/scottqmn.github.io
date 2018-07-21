@@ -1,0 +1,671 @@
+/* maude: { color: #A37979 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .section {
+        padding: 1% 10% 15% 10%;
+    }
+
+    .title {
+        margin-top: 5%;
+        padding: 5% 0 5% 0;
+    }
+
+    .header {
+        padding-bottom: 10%;
+    }
+
+    .logo {
+        height: 150px;
+        width: 150px;
+        margin: 10% 0 10% 0;
+    }
+
+    .header__menu a {
+        padding: 0 4% 2% 4%;
+        font-size: 16pt;
+        color:#00000085;
+    }
+
+    /* INTRO */
+
+    .about {
+        padding: 5% 10% 20% 10%;
+        font-size: 16pt;
+    }
+
+    .about__greeting {
+        font-size: 18pt;
+        margin-bottom: 5%;
+    }
+    
+    /* RESUME */
+
+    .resume__menu {
+        margin: auto;
+        text-align: center;
+        margin-bottom: 3%;
+        color: #00000085;
+
+    }
+    .resume__menu a {
+        font-size: 12pt;
+        padding: 0 2% 2% 2%;
+    }
+
+    .resume__section {
+        font-size: 12pt;
+        display: none;
+        height: 450px;
+        width: 97%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    
+    .resume__section__entry {
+        margin-bottom: 2%;
+        padding: 2%;
+    }
+    
+    .resume__section__entry__info {
+        margin: 0.5% 0;
+        text-align: center;
+    }
+    
+    .resume__section__entry__exp {
+        margin-top: 3%;
+    }
+    
+    .resume__section__entry__exp p {
+        margin-bottom: 1%;
+        text-align: center;
+    }
+
+    /* PROJECTS */
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:45px;
+        max-width: 25rem;
+        font-size: 12pt;
+        border: 0;
+        box-shadow: 0 4px 6px 0 #00000020;
+    }
+
+    .card-body {
+        height: 240px;
+    }
+
+    .card-title {
+        font-weight: 600;
+        color: hsl(0, 0%, 13%);
+    }
+
+
+    .card-bottom {
+        display: none;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .card-text {
+        font-weight: 400;
+        color: hsl(0, 0%, 29%);
+        height: 155px;
+        overflow-y: auto;
+    }
+
+    /* CONTACT */
+
+    .contact {
+        background-color:#FBFBFB;
+        font-size: 10pt;
+        margin-bottom: 0%;
+        padding-bottom: 10%;
+    }
+
+    .contact__credits {
+        font-size: 9pt;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .section {
+        padding: 1% 10% 15% 10%;
+    }
+
+    .title {
+        margin-top: 5%;
+        padding: 5% 0 5% 0;
+    }
+
+    .header {
+        padding: 4% 0;
+    }
+
+    .logo {
+        height: 150px;
+        width: 150px;
+        margin: 10% 0 10% 0;
+    }
+
+    .header__menu a {
+        padding: 0 4% 2% 4%;
+        font-size: 16pt;
+        color:#00000085;
+    }
+
+    /* INTRO */
+
+    .about {
+        padding: 5% 10% 20% 10%;
+        font-size: 16pt;
+    }
+
+    .about__greeting {
+        font-size: 18pt;
+        margin-bottom: 5%;
+    }
+    
+    /* RESUME */
+
+    .resume__menu {
+        margin: auto;
+        text-align: center;
+        margin-bottom: 3%;
+        color: #00000085;
+
+    }
+    .resume__menu a {
+        font-size: 12pt;
+        padding: 0 2% 2% 2%;
+    }
+
+    .resume__section {
+        font-size: 12pt;
+        display: none;
+        height: 450px;
+        width: 97%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    
+    .resume__section__entry {
+        margin-bottom: 2%;
+        padding: 2%;
+    }
+    
+    .resume__section__entry__info {
+        margin: 0.5% 0;
+    }
+    
+    .resume__section__entry__exp {
+        margin-top: 3%;
+    }
+    
+    .resume__section__entry__exp p {
+        margin-bottom: 1%;
+    }
+
+    /* PROJECTS */
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:45px;
+        max-width: 25rem;
+        font-size: 12pt;
+        border: 0;
+        box-shadow: 0 4px 6px 0 #00000020;
+    }
+
+    .card-body {
+        height: 235px;
+    }
+
+    .card-title {
+        font-weight: 600;
+        color: hsl(0, 0%, 13%);
+    }
+
+
+    .card-bottom {
+        display: none;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }   
+
+    .card-text {
+        font-weight: 400;
+        color: hsl(0, 0%, 29%);
+        height: 150px;
+        overflow-y: auto;
+        
+    }
+
+    /* CONTACT */
+
+    .contact {
+        background-color:#FBFBFB;
+        font-size: 10pt;
+        margin-bottom: 0%;
+        padding-bottom: 10%;
+    }
+
+    .contact__credits {
+        font-size: 9pt;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 14pt;
+        font-weight: 400;
+    }
+
+    .section {
+        padding: 1% 10% 15% 10%;
+    }
+
+    .title {
+        margin-bottom: 5%;
+    }
+
+    .title--no-margin {
+        margin-bottom: 0;
+    }
+
+    .header {
+        padding-top: 5%;
+    }
+
+    .logo {
+        height: 150px;
+        width: 150px;
+        margin: 4% 0 2% 0;
+    }
+
+    .header__menu a {
+        padding: 0 4% 2% 4%;
+        font-size: 22pt;
+        color:#00000085;
+    }
+
+    /* INTRO */
+
+    .about {
+        font-size: 24pt;
+    }
+
+    .about__greeting {
+        font-size: 30pt;
+        margin-bottom: 5%;
+    }
+
+    /* RESUME */
+
+    .resume__menu {
+        margin: auto;
+        text-align: center;
+        margin-bottom: 3%;
+        color: #00000085;
+
+    }
+    .resume__menu a {
+        font-size: 18pt;
+        padding: 0 2% 1% 2%;
+    }
+
+    .resume__section {
+        font-size: 18pt;
+        display: none;
+        height: 450px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-y: auto;
+    }
+    
+    .resume__section__entry {
+        margin-bottom: 2%;
+        padding: 2%;
+    }
+    
+    .resume__section__entry__info {
+        margin: 0.5% 0;
+    }
+    
+    .resume__section__entry__exp {
+        margin-top: 2%;
+    }
+    
+    .resume__section__entry__exp p {
+        margin-bottom: 1%;
+    }
+
+    /* PROJECTS */
+    
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:45px;
+        max-width: 25rem;
+        font-size: 18pt;
+        border: 0;
+        box-shadow: 0 4px 6px 0 #00000020;
+    }
+    
+    .card-body {
+        height: 265px;
+    }
+    
+    .card-title {
+        font-weight: 600;
+        color: hsl(0, 0%, 13%);
+    }
+    
+    
+    .card-bottom {
+        display: none;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .card-text {
+        font-weight: 400;
+        color: hsl(0, 0%, 29%);
+        height: 180px;
+        overflow-y: auto;
+    }
+
+    /* CONTACT */
+
+    .contact {
+        background-color:#FBFBFB;
+        font-size: 18pt;
+        margin-bottom: 0%;
+        padding-bottom: 10%;
+    }
+
+    .contact__credits {
+        font-size: 14pt;
+    }
+
+
+    .title {
+        font-size: 28pt;
+        margin-top: 5%;
+        padding: 5% 0 3% 0;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: 14pt;
+        font-weight: 400;
+    }
+
+    .section {
+        padding: 1% 15% 15% 15%;
+    }
+
+
+    .title {
+        font-size: 30pt;
+        margin: 5% 0;
+        padding: 5% 0 3% 0;
+    }
+
+    .title--no-margin {
+        margin-bottom: 0;
+    }
+
+    .header {
+        padding-top: 2%;
+    }
+
+    .logo {
+        height: 150px;
+        width: 150px;
+        margin: 4% 0 2% 0;
+    }
+
+    .header__menu a {
+        padding: 0 4% 2% 4%;
+        font-size: 24pt;
+        color:#00000085;
+    }
+
+    /* INTRO */
+
+    .about {
+        font-size: 24pt;
+        padding: 5% 18% 20% 18%;
+    }
+
+    .about__greeting {
+        font-size: 30pt;
+        margin-bottom: 5%;
+    }
+
+    .resume__menu {
+        margin: auto;
+        text-align: center;
+        margin-bottom: 3%;
+        color: #00000085;
+
+    }
+    .resume__menu a {
+        font-size: 16pt;
+        padding: 0 2% 1% 2%;
+    }
+
+    .resume__section {
+        font-size: 16pt;
+        display: none;
+        height: 450px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-y: auto;
+    }
+    
+    .resume__section__entry {
+        margin-bottom: 2%;
+        padding: 2%;
+    }
+    
+    .resume__section__entry__info {
+        margin: 0.5% 0;
+    }
+    
+    .resume__section__entry__exp {
+        margin-top: 2%;
+    }
+    
+    .resume__section__entry__exp p {
+        margin-bottom: 1%;
+    }
+
+    /* PROJECTS */
+    
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:45px;
+        max-width: 25rem;
+        font-size: 14pt;
+        border: 0;
+        box-shadow: 0 4px 6px 0 #00000020;
+    }
+    
+    .card-body {
+        height: 265px;
+    }
+    
+    .card-title {
+        font-weight: 600;
+        color: hsl(0, 0%, 13%);
+    }
+    
+    
+    .card-bottom {
+        display: none;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .card-text {
+        font-weight: 400;
+        color: hsl(0, 0%, 29%);
+        height: 180px;
+        overflow-y: auto;
+    }
+
+    /* CONTACT */
+
+    .contact {
+        background-color:#FBFBFB;
+        font-size: 14pt;
+        margin-bottom: 0%;
+        padding-bottom: 10%;
+    }
+
+} 
+
+body {
+    background-color:#FFFFFF;
+    color: #A37979;
+    font-family: 'Raleway', sans-serif;
+}
+
+.weight-heavy {
+    font-weight: 700;
+}
+
+.header__menu {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.header__menu a:hover {
+    border-bottom: 3px solid #A37979;
+    text-decoration: none;
+    color:#00000085;
+}
+
+
+
+/* RESUME */
+
+.resume {
+    background-color:#FBFBFB;
+}
+
+.resume__menu a:hover {
+    border-bottom: 2px solid #A37979;
+}
+
+.resume__menu--active {
+    color: #A37979;
+    border-bottom: 2px solid #A37979;
+}
+
+.resume__menu a {
+    color: #00000085;
+    text-decoration: none;
+}
+
+.list-skills {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 475px;
+    overflow-x: auto;
+}
+
+.card-tools li {
+    display: inline;
+    margin: 0 3px;
+    padding: 3px 5px;
+    border: 1px solid #A37979;
+    border-radius: 5px;
+}
+
+
+.contact__links a {
+    color: #00000085;
+}
+
+.contact__links a:hover {
+    color: #A37979;
+    text-decoration: none;
+}
+
+
+
+.scroll-top {
+    background-color: #FBFBFB;
+    font-size: 22pt;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    padding-top: 8px;
+    box-shadow: 0 4px 6px 0 #00000020;
+
+    position: fixed;
+    bottom: 15px;
+    left: 0px;
+    right: 0px;
+    margin-right: 5%;
+    margin-left: auto;
+
+    display: none;
+}
+
+.scroll-top.grow:hover {
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.grow {
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.05); 
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
