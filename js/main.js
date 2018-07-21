@@ -51,7 +51,7 @@ $(document).ready(function(){
 
     var resume = {
         ucsdData: {
-            type: "resume-entry--education",
+            type: "resume__section__entry--education",
             name: "University of California, San Diego",
             role: "B.S. Mathematics-Computer Science",
             start: "Fall 2015",
@@ -63,7 +63,7 @@ $(document).ready(function(){
 
         entries: [
                 {
-                    type: "resume-entry--education",
+                    type: "resume__section__entry--education",
                     name: "1University of California, San Diego",
                     role: "B.S. Mathematics-Computer Science",
                     start: "Fall 2015",
@@ -73,7 +73,7 @@ $(document).ready(function(){
                     bullet: ["Advanced Data Structures", "Design and Analysis of Algorithms", "Digital Systems Design", "Automata and Computability Theory", "Numerical Analysis", "Combinatorics", "Statistical Methods"]
                 },
                 {
-                    type: "resume-entry--education",
+                    type: "resume__section__entry--education",
                     name: "2University of California, San Diego",
                     role: "B.S. Mathematics-Computer Science",
                     start: "Fall 2015",
@@ -83,7 +83,7 @@ $(document).ready(function(){
                     bullet: ["Advanced Data Structures", "Design and Analysis of Algorithms", "Digital Systems Design", "Automata and Computability Theory", "Numerical Analysis", "Combinatorics", "Statistical Methods"]
                 },
                 {
-                    type: "resume-entry--education",
+                    type: "resume__section__entry--education",
                     name: "3University of California, San Diego",
                     role: "B.S. Mathematics-Computer Science",
                     start: "Fall 2015",
@@ -120,11 +120,11 @@ $(document).ready(function(){
     resume.init();
 
     function showSec(sec){
-        $(".resume-section").hide();
-        $(".resume-link-active").removeClass("resume-link-active weight-heavy");
+        $(".resume__section").hide();
+        $(".resume__menu--active").removeClass("resume__menu--active weight-heavy");
         
         $("#" + sec).show();
-        $("#a-" + sec).addClass("resume-link-active weight-heavy");
+        $("#a-" + sec).addClass("resume__menu--active weight-heavy");
     }
 
     $("#a-education").click(function(){ showSec("education"); });

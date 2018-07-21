@@ -2,26 +2,26 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .section{
+    .section {
         padding: 1% 10% 15% 10%;
     }
 
-    .header{
+    .title {
         margin-top: 5%;
         padding: 5% 0 5% 0;
     }
 
-    .toolbar{
+    .header {
         padding-bottom: 10%;
     }
 
-    .logo{
+    .logo {
         height: 150px;
         width: 150px;
         margin: 10% 0 10% 0;
     }
 
-    .menu__item{
+    .header__menu a {
         padding: 0 4% 2% 4%;
         font-size: 16pt;
         color:#00000085;
@@ -29,31 +29,31 @@
 
     /* INTRO */
 
-    .section--about{
+    .about {
         padding: 5% 10% 20% 10%;
         font-size: 16pt;
     }
 
-    .greeting{
+    .about__greeting {
         font-size: 18pt;
         margin-bottom: 5%;
     }
     
     /* RESUME */
 
-    .resume-menu{
+    .resume__menu {
         margin: auto;
         text-align: center;
         margin-bottom: 3%;
         color: #00000085;
 
     }
-    .resume-menu__item{
+    .resume__menu a {
         font-size: 12pt;
         padding: 0 2% 2% 2%;
     }
 
-    .resume-section{
+    .resume__section {
         font-size: 12pt;
         display: none;
         height: 450px;
@@ -64,28 +64,28 @@
         overflow-x: hidden;
     }
     
-    .resume-entry{
+    .resume__section__entry {
         margin-bottom: 2%;
         padding: 2%;
     }
     
-    .resume-entry div div p{
+    .resume__section__entry div div p {
         margin: 0.5% 0;
         text-align: center;
     }
     
-    .list-exp{
+    .resume__section__entry__exp {
         margin-top: 3%;
     }
     
-    .list-exp p{
+    .resume__section__entry__exp p {
         margin-bottom: 1%;
         text-align: center;
     }
 
     /* PROJECTS */
 
-    .card{
+    .card {
         margin-left: auto;
         margin-right: auto;
         margin-bottom:45px;
@@ -95,17 +95,17 @@
         box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
     }
 
-    .card-body{
+    .card-body {
         height: 240px;
     }
 
-    .card-title{
+    .card-title {
         font-weight: 600;
         color: hsl(0, 0%, 13%);
     }
 
 
-    .card-bottom{
+    .card-bottom {
         display: none;
         position: absolute;
         margin-left: auto;
@@ -115,7 +115,7 @@
         bottom: 0;
     }
 
-    .card-text{
+    .card-text {
         font-weight: 400;
         color: hsl(0, 0%, 29%);
         height: 155px;
@@ -124,14 +124,14 @@
 
     /* CONTACT */
 
-    .section--contact {
+    .contact {
         background-color:#FBFBFB;
         font-size: 10pt;
         margin-bottom: 0%;
         padding-bottom: 10%;
     }
 
-    .contact-credits{
+    .contact__credits {
         font-size: 9pt;
     }
 } 
@@ -139,26 +139,26 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
-    .section{
+    .section {
         padding: 1% 10% 15% 10%;
     }
 
-    .header{
+    .title {
         margin-top: 5%;
         padding: 5% 0 5% 0;
     }
 
-    .toolbar{
+    .header {
         padding: 4% 0;
     }
 
-    .logo{
+    .logo {
         height: 150px;
         width: 150px;
         margin: 10% 0 10% 0;
     }
 
-    .menu__item{
+    .header__menu a {
         padding: 0 4% 2% 4%;
         font-size: 16pt;
         color:#00000085;
@@ -166,31 +166,31 @@
 
     /* INTRO */
 
-    .section--about{
+    .about {
         padding: 5% 10% 20% 10%;
         font-size: 16pt;
     }
 
-    .greeting{
+    .about__greeting {
         font-size: 18pt;
         margin-bottom: 5%;
     }
     
     /* RESUME */
 
-    .resume-menu{
+    .resume__menu {
         margin: auto;
         text-align: center;
         margin-bottom: 3%;
         color: #00000085;
 
     }
-    .resume-menu__item{
+    .resume__menu a {
         font-size: 12pt;
         padding: 0 2% 2% 2%;
     }
 
-    .resume-section{
+    .resume__section {
         font-size: 12pt;
         display: none;
         height: 450px;
@@ -201,29 +201,29 @@
         overflow-x: hidden;
     }
     
-    .resume-entry{
+    .resume__section__entry {
         margin-bottom: 2%;
         padding: 2%;
     }
     
-    .resume-entry div div p{
+    .resume__section__entry div div p {
         margin: 0.5% 0;
     }
     
-    .list-exp{
+    .resume__section__entry__exp {
         margin-top: 3%;
     }
     
-    .list-exp p{
+    .resume__section__entry__exp p {
         margin-bottom: 1%;
     }
 
     /* PROJECTS */
 
-    .projects{
+    .projects {
     }
 
-    .card{
+    .card {
         margin-left: auto;
         margin-right: auto;
         margin-bottom:45px;
@@ -233,17 +233,17 @@
         box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
     }
 
-    .card-body{
+    .card-body {
         height: 235px;
     }
 
-    .card-title{
+    .card-title {
         font-weight: 600;
         color: hsl(0, 0%, 13%);
     }
 
 
-    .card-bottom{
+    .card-bottom {
         display: none;
         position: absolute;
         margin-left: auto;
@@ -253,7 +253,7 @@
         bottom: 0;
     }   
 
-    .card-text{
+    .card-text {
         font-weight: 400;
         color: hsl(0, 0%, 29%);
         height: 150px;
@@ -263,44 +263,48 @@
 
     /* CONTACT */
 
-    .section--contact {
+    .contact {
         background-color:#FBFBFB;
         font-size: 10pt;
         margin-bottom: 0%;
         padding-bottom: 10%;
     }
 
-    .contact-credits{
+    .contact__credits {
         font-size: 9pt;
     }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    body{
+    body {
         font-size: 14pt;
         font-weight: 400;
     }
 
-    .section{
+    .section {
         padding: 1% 10% 15% 10%;
     }
 
-    .header{
+    .title {
         margin-bottom: 5%;
     }
 
-    .toolbar{
+    .title--no-margin {
+        margin-bottom: 0;
+    }
+
+    .header {
         padding-top: 5%;
     }
 
-    .logo{
+    .logo {
         height: 150px;
         width: 150px;
         margin: 4% 0 2% 0;
     }
 
-    .menu__item{
+    .header__menu a {
         padding: 0 4% 2% 4%;
         font-size: 22pt;
         color:#00000085;
@@ -308,34 +312,30 @@
 
     /* INTRO */
 
-    .section--about{
+    .about {
         font-size: 24pt;
     }
 
-    .greeting{
+    .about__greeting {
         font-size: 30pt;
         margin-bottom: 5%;
     }
 
     /* RESUME */
 
-    .header--resume{
-        margin-bottom: 0;
-    }
-
-    .resume-menu{
+    .resume__menu {
         margin: auto;
         text-align: center;
         margin-bottom: 3%;
         color: #00000085;
 
     }
-    .resume-menu__item{
+    .resume__menu a {
         font-size: 18pt;
         padding: 0 2% 1% 2%;
     }
 
-    .resume-section{
+    .resume__section {
         font-size: 18pt;
         display: none;
         height: 450px;
@@ -345,29 +345,29 @@
         overflow-y: auto;
     }
     
-    .resume-entry{
+    .resume__section__entry {
         margin-bottom: 2%;
         padding: 2%;
     }
     
-    .resume-entry div div p{
+    .resume__section__entry div div p {
         margin: 0.5% 0;
     }
     
-    .list-exp{
+    .resume__section__entry__exp {
         margin-top: 2%;
     }
     
-    .list-exp p{
+    .resume__section__entry__exp p {
         margin-bottom: 1%;
     }
 
     /* PROJECTS */
 
-    .projects{
+    .projects {
     }
     
-    .card{
+    .card {
         margin-left: auto;
         margin-right: auto;
         margin-bottom:45px;
@@ -377,17 +377,17 @@
         box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
     }
     
-    .card-body{
+    .card-body {
         height: 265px;
     }
     
-    .card-title{
+    .card-title {
         font-weight: 600;
         color: hsl(0, 0%, 13%);
     }
     
     
-    .card-bottom{
+    .card-bottom {
         display: none;
         position: absolute;
         margin-left: auto;
@@ -397,7 +397,7 @@
         bottom: 0;
     }
 
-    .card-text{
+    .card-text {
         font-weight: 400;
         color: hsl(0, 0%, 29%);
         height: 180px;
@@ -406,19 +406,19 @@
 
     /* CONTACT */
 
-    .section--contact {
+    .contact {
         background-color:#FBFBFB;
         font-size: 18pt;
         margin-bottom: 0%;
         padding-bottom: 10%;
     }
 
-    .contact-credits{
+    .contact__credits {
         font-size: 14pt;
     }
 
 
-    .header{
+    .title {
         font-size: 28pt;
         margin-top: 5%;
         padding: 5% 0 3% 0;
@@ -427,33 +427,37 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    body{
+    body {
         font-size: 14pt;
         font-weight: 400;
     }
 
-    .section{
+    .section {
         padding: 1% 15% 15% 15%;
     }
 
 
-    .header{
+    .title {
         font-size: 30pt;
         margin: 5% 0;
         padding: 5% 0 3% 0;
     }
 
-    .toolbar{
+    .title--no-margin {
+        margin-bottom: 0;
+    }
+
+    .header {
         padding-top: 2%;
     }
 
-    .logo{
+    .logo {
         height: 150px;
         width: 150px;
         margin: 4% 0 2% 0;
     }
 
-    .menu__item{
+    .header__menu a {
         padding: 0 4% 2% 4%;
         font-size: 24pt;
         color:#00000085;
@@ -461,34 +465,29 @@
 
     /* INTRO */
 
-    .section--about{
+    .about {
         font-size: 24pt;
         padding: 5% 18% 20% 18%;
     }
 
-    .greeting{
+    .about__greeting {
         font-size: 30pt;
         margin-bottom: 5%;
     }
 
-
-    .header--resume{
-        margin-bottom: 0;
-    }
-
-    .resume-menu{
+    .resume__menu {
         margin: auto;
         text-align: center;
         margin-bottom: 3%;
         color: #00000085;
 
     }
-    .resume-menu__item{
+    .resume__menu a {
         font-size: 16pt;
         padding: 0 2% 1% 2%;
     }
 
-    .resume-section{
+    .resume__section {
         font-size: 16pt;
         display: none;
         height: 450px;
@@ -498,29 +497,29 @@
         overflow-y: auto;
     }
     
-    .resume-entry{
+    .resume__section__entry {
         margin-bottom: 2%;
         padding: 2%;
     }
     
-    .resume-entry div div p{
+    .resume__section__entry div div p {
         margin: 0.5% 0;
     }
     
-    .list-exp{
+    .resume__section__entry__exp {
         margin-top: 2%;
     }
     
-    .list-exp p{
+    .resume__section__entry__exp p {
         margin-bottom: 1%;
     }
 
     /* PROJECTS */
 
-    .projects{
+    .projects {
     }
     
-    .card{
+    .card {
         margin-left: auto;
         margin-right: auto;
         margin-bottom:45px;
@@ -530,17 +529,17 @@
         box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
     }
     
-    .card-body{
+    .card-body {
         height: 265px;
     }
     
-    .card-title{
+    .card-title {
         font-weight: 600;
         color: hsl(0, 0%, 13%);
     }
     
     
-    .card-bottom{
+    .card-bottom {
         display: none;
         position: absolute;
         margin-left: auto;
@@ -550,7 +549,7 @@
         bottom: 0;
     }
 
-    .card-text{
+    .card-text {
         font-weight: 400;
         color: hsl(0, 0%, 29%);
         height: 180px;
@@ -559,7 +558,7 @@
 
     /* CONTACT */
 
-    .section--contact {
+    .contact {
         background-color:#FBFBFB;
         font-size: 14pt;
         margin-bottom: 0%;
@@ -568,31 +567,24 @@
 
 } 
 
-body{
+body {
     background-color:#FFFFFF;
     color: #A37979;
     font-family: 'Raleway', sans-serif;
 }
 
-.weight-heavy{
+.weight-heavy {
     font-weight: 700;
 }
 
-.padding-0{
-    padding-right:0;
-    padding-left:0;
-}
-
-
-
-.menu{
+.header__menu {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
 
-.menu__item:hover{
+.header__menu a:hover {
     border-bottom: 3px solid #A37979;
     text-decoration: none;
     color:#00000085;
@@ -602,24 +594,25 @@ body{
 
 /* RESUME */
 
-.section--resume {
+.resume {
     background-color:#FBFBFB;
 }
 
-.resume-menu__item:hover {
+.resume__menu a:hover {
     border-bottom: 2px solid #A37979;
 }
 
-.resume-link-active {
+.resume__menu--active {
     color: #A37979;
     border-bottom: 2px solid #A37979;
 }
 
-#a-download {
+.resume__menu a,
+.resume__menu a:link,
+.resume__menu a:visited,
+.resume__menu a:hover,
+.resume__menu a:active {
     color: #00000085;
-}
-
-#a-download:hover {
     text-decoration: none;
 }
 
@@ -631,7 +624,7 @@ body{
     overflow-x: auto;
 }
 
-ul.tools li {
+ul.card-tools li {
     display: inline;
     margin: 0 3px;
     padding: 3px 5px;
@@ -639,6 +632,14 @@ ul.tools li {
     border-radius: 5px;
 }
 
+.contact__links,
+.contact__links a,
+.contact__links a:link,
+.contact__links a:visited,
+.contact__links a:hover,
+.contact__links a:active {
+    color: #00000085;;
+}
 
 
 
