@@ -103,6 +103,7 @@ $(document).ready(function(){
             this.$education = this.$el.find('#a-education');
             this.$work = this.$el.find('#a-work');
             this.$volunteer = this.$el.find('#a-volunteer');
+            this.$skills = this.$el.find('#a-skills');
             this.$section = this.$el.find('#test-section');
             this.template = this.$el.find('#resume-template').html();
         },
@@ -130,7 +131,7 @@ $(document).ready(function(){
     $("#a-education").click(function(){ showSec("education"); });
     $("#a-work").click(function(){ showSec("work"); });
     $("#a-volunteer").click(function(){ showSec("volunteer"); });
-    //$("#a-skills").click(function(){ showSec("skills"); });
+    $("#a-skills").click(function(){ showSec("skills"); });
 
     showSec("education");
 
