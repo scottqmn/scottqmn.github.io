@@ -115,7 +115,7 @@ hr {
 }
 
 .content {
-  max-width: 300px;
+  max-width: 250px;
   margin: 0 auto;
 }
 
@@ -195,7 +195,7 @@ hr {
 .button-link {
   position: relative;
   display: block;
-  padding: 8px 0;
+  padding: 1em 0;
   font-size: 0.68em;
   font-weight: 700;
   text-align: center;
